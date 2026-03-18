@@ -16,9 +16,9 @@
 ---
 ## 📸 Screenshots
 
-| Halaman Login | Dashboard Admin |
+| Halaman Login | Dashboard Siswa |
 |---|---|
-| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard-admin.png) |
+| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard-siswa.png) |
 
 | Form Penilaian | Hasil Rekomendasi |
 |---|---|
