@@ -13,8 +13,6 @@
 
 **StudyMatch** adalah aplikasi web yang membantu siswa SMA/SMK dalam memilih jurusan kuliah yang paling sesuai dengan minat, kemampuan, dan kondisi mereka. Sistem ini menggunakan metode **TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)** untuk menghasilkan rekomendasi jurusan yang objektif dan terukur.
 
-Proyek ini dibuat sebagai **Tugas Akhir / Skripsi** sekaligus **portofolio pengembangan web** dengan stack Laravel + MySQL.
-
 ---
 
 ## ✨ Fitur Utama
