@@ -1,60 +1,191 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 StudyMatch
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> Sistem Pendukung Keputusan Pemilihan Jurusan Kuliah untuk Siswa SMA/SMK Berbasis Web Menggunakan Metode TOPSIS
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📌 Tentang Proyek
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**StudyMatch** adalah aplikasi web yang membantu siswa SMA/SMK dalam memilih jurusan kuliah yang paling sesuai dengan minat, kemampuan, dan kondisi mereka. Sistem ini menggunakan metode **TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)** untuk menghasilkan rekomendasi jurusan yang objektif dan terukur.
 
-## Learning Laravel
+Proyek ini dibuat sebagai **Tugas Akhir / Skripsi** sekaligus **portofolio pengembangan web** dengan stack Laravel + MySQL.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ Fitur Utama
 
-## Laravel Sponsors
+### 👤 Siswa
+- Register & Login dengan autentikasi aman
+- Isi form penilaian berbasis 6 kriteria (minat, budget, prospek kerja)
+- Lihat **Top 5 rekomendasi jurusan** beserta tingkat kecocokan (%)
+- Riwayat penilaian tersimpan dan bisa dilihat kembali
+- Tampilan responsif — bisa diakses dari HP maupun desktop
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🛠️ Admin
+- Dashboard statistik (total jurusan, siswa, penilaian)
+- Kelola data jurusan (CRUD) beserta nilai per kriteria
+- Kelola kriteria TOPSIS dan bobotnya
+- Pantau data siswa yang terdaftar
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🧠 Metode TOPSIS
 
-## Contributing
+StudyMatch menggunakan metode **TOPSIS** untuk menghitung tingkat kecocokan antara profil siswa dan setiap jurusan berdasarkan 6 kriteria:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| No | Kriteria | Bobot | Tipe |
+|----|----------|-------|------|
+| C1 | Minat Teknologi & Sains Eksakta | 20% | Benefit |
+| C2 | Minat Kesehatan & Biologi | 15% | Benefit |
+| C3 | Minat Sosial & Komunikasi | 15% | Benefit |
+| C4 | Minat Bisnis & Keuangan | 15% | Benefit |
+| C5 | Budget Kuliah per Tahun | 20% | Cost |
+| C6 | Prioritas Prospek Kerja & Gaji | 15% | Benefit |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Tech Stack
 
-## Security Vulnerabilities
+| Komponen | Teknologi |
+|----------|-----------|
+| Backend Framework | Laravel 12 |
+| Language | PHP 8.3 |
+| Database | MySQL |
+| Frontend | Blade + Tailwind CSS |
+| Authentication | Laravel Breeze |
+| Role Management | Spatie Laravel Permission |
+| Local Server | XAMPP |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🚀 Cara Instalasi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# StudyMatch" 
+### Requirements
+- PHP >= 8.3
+- Composer
+- Node.js & NPM
+- MySQL (XAMPP / Laragon)
+
+### Langkah Instalasi
+
+**1. Clone repository**
+```bash
+git clone https://github.com/username/studymatch.git
+cd studymatch
+```
+
+**2. Install dependencies**
+```bash
+composer install
+npm install
+```
+
+**3. Copy file environment**
+```bash
+cp .env.example .env
+```
+
+**4. Setup .env**
+```env
+APP_NAME=StudyMatch
+APP_URL=http://localhost:8000
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=studymatch
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+**5. Generate app key**
+```bash
+php artisan key:generate
+```
+
+**6. Buat database**
+
+Buka phpMyAdmin → buat database baru bernama `studymatch`
+
+**7. Jalankan migrasi & seeder**
+```bash
+php artisan migrate --seed
+```
+
+**8. Build assets**
+```bash
+npm run build
+```
+
+**9. Jalankan server**
+```bash
+php artisan serve
+```
+
+Buka browser → `http://127.0.0.1:8000`
+
+---
+
+## 🔑 Akun Default
+
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@studymatch.com | password |
+| Siswa | Register sendiri di `/register` | - |
+
+---
+
+## 📁 Struktur Proyek
+
+```
+studymatch/
+├── app/
+│   ├── Http/Controllers/
+│   │   ├── Admin/          # Controller untuk panel admin
+│   │   └── Siswa/          # Controller untuk portal siswa
+│   ├── Models/             # Eloquent models
+│   └── Services/
+│       └── TopsisService.php   # Algoritma TOPSIS
+├── database/
+│   ├── migrations/         # Skema database
+│   └── seeders/            # Data awal (jurusan, kriteria, admin)
+└── resources/views/
+    ├── admin/              # Tampilan panel admin
+    ├── siswa/              # Tampilan portal siswa
+    └── layouts/            # Layout utama (admin & siswa)
+```
+
+---
+
+## 📸 Screenshots
+
+> *Tambahkan screenshot aplikasi di sini*
+
+| Halaman Login | Dashboard Siswa |
+|---|---|
+| ![Login](#) | ![Dashboard](#) |
+
+| Form Penilaian | Hasil Rekomendasi |
+|---|---|
+| ![Form](#) | ![Hasil](#) |
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dibuat untuk keperluan akademik (Skripsi / Tugas Akhir).  
+Bebas digunakan sebagai referensi dengan mencantumkan sumber.
+
+---
+
+## 👨‍💻 Developer
+
+**Nama Kamu** — Mahasiswa Teknik Informatika  
+Universitas Muhammadiyah Sidoarjo (UMSIDA)
+
+[![GitHub](https://img.shields.io/badge/GitHub-username-181717?style=flat&logo=github)](https://github.com/username)
