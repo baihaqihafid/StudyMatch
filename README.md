@@ -18,7 +18,7 @@
 
 | Halaman Login | Dashboard Siswa |
 |---|---|
-| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard-siswa.png) |
+| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard-admin.png) |
 
 | Form Penilaian | Hasil Rekomendasi |
 |---|---|
