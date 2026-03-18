@@ -16,7 +16,7 @@
 ---
 ## 📸 Screenshots
 
-| Halaman Login | Dashboard Siswa |
+| Halaman Login | Dashboard Admin |
 |---|---|
 | ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard-admin.png) |
 
