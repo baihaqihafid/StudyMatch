@@ -171,14 +171,13 @@ studymatch/
 
 ## 📄 Lisensi
 
-Proyek ini dibuat untuk keperluan akademik (Skripsi / Tugas Akhir).  
 Bebas digunakan sebagai referensi dengan mencantumkan sumber.
 
 ---
 
 ## 👨‍💻 Developer
 
-**Nama Kamu** — Mahasiswa Teknik Informatika  
+**AHmad Baihaqi Hafid** — Mahasiswa Informatika  
 Universitas Muhammadiyah Sidoarjo (UMSIDA)
 
 [![GitHub](https://img.shields.io/badge/GitHub-username-181717?style=flat&logo=github)](https://github.com/username)
