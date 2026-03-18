@@ -15,6 +15,21 @@
 
 ---
 
+## 📸 Screenshots
+
+> *Tambahkan screenshot aplikasi di sini*
+
+| Halaman Login | Dashboard Siswa |
+|---|---|
+| ![Login](#) | ![Dashboard](#) |
+
+| Form Penilaian | Hasil Rekomendasi |
+|---|---|
+| ![Form](#) | ![Hasil](#) |
+
+---
+
+
 ## ✨ Fitur Utama
 
 ### 👤 Siswa
@@ -158,21 +173,6 @@ studymatch/
     └── layouts/            # Layout utama (admin & siswa)
 ```
 
----
-
-## 📸 Screenshots
-
-> *Tambahkan screenshot aplikasi di sini*
-
-| Halaman Login | Dashboard Siswa |
-|---|---|
-| ![Login](#) | ![Dashboard](#) |
-
-| Form Penilaian | Hasil Rekomendasi |
-|---|---|
-| ![Form](#) | ![Hasil](#) |
-
----
 
 ## 📄 Lisensi
 
